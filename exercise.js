@@ -6,7 +6,7 @@ var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 
 var mysql = require('mysql');
 var pool = mysql.createPool({
-    host: 'flip3.engr.oregonstate.edu',
+    host: 'flip3.engr.oregonstate.edu:9068',
     user: 'boberr',
     password: 'Ae832da01cSpence71',
     database: 'boberr'
