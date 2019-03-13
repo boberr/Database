@@ -6,10 +6,11 @@ var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 
 var mysql = require('mysql');
 var pool = mysql.createPool({
-  host  : 'classmysql.engr.oregonstate.edu',
-  user  : 'cs290_boberr',
-  password: '9068',
-  database: 'cs290_boberr'
+	connectionLimit: 10,
+  	host  : 'classmysql.engr.oregonstate.edu',
+	user  : 'cs290_boberr',
+ 	password: '9068',
+	database: 'cs290_boberr'
 });
 
 app.engine('handlebars', handlebars.engine);
